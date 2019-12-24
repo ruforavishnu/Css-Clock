@@ -33,12 +33,57 @@
       height: 100%;
       transform: translateY(-3px); /* account for the height of the clock hands */
     }
+
+
+
     .hand {
-      width: 50%;
+      
+      
+    }
+
+
+    .min-hand
+    {
+
+      width:50%;
+      
       height: 6px;
       background: black;
       position: absolute;
       top: 50%;
+     
+      //transform: scale(0.9);
+      transform-origin : 100%;
+      transform: rotate(90deg);
+      transition: all 0.5s;
+
+    }
+
+    .second-hand
+    {
+
+      width:50%;
+      
+      height: 6px;
+      background: black;
+      position: absolute;
+      top: 50%;
+     
+      //transform: scale(0.7);
+      transform-origin : 100%;
+      transform: rotate(90deg);
+      transition: all 0.5s;
+    }
+
+    .hour-hand
+    {
+      width:50%;
+      height: 6px;
+      background: black;
+      position: absolute;
+      top: 50%;
+     
+     
       transform-origin : 100%;
       transform: rotate(90deg);
       transition: all 0.5s;
